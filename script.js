@@ -7,6 +7,7 @@
    - Back to top button
    - Navbar scroll effect
    - Smooth scrolling
+   - Animated statistics counters
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -44,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Navbar scroll effect
-  let lastScrollY = 0;
   window.addEventListener('scroll', () => {
     const currentScrollY = window.scrollY;
     if (currentScrollY > 50) {
@@ -52,7 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       navbar.classList.remove('navbar--scrolled');
     }
-    lastScrollY = currentScrollY;
   }, { passive: true });
 
   // ============================================
@@ -65,8 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        // Optional: unobserve after reveal for performance
-        // revealObserver.unobserve(entry.target);
       }
     });
   }, {
@@ -90,13 +87,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isNaN(target)) return;
 
         let current = 0;
-        const duration = 1500; // ms
+        const duration = 1500;
         const startTime = performance.now();
 
         function updateCounter(timestamp) {
           const elapsed = timestamp - startTime;
           const progress = Math.min(elapsed / duration, 1);
-          // Ease out cubic
           const eased = 1 - Math.pow(1 - progress, 3);
           current = Math.round(eased * target);
           el.textContent = current;
@@ -109,7 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         requestAnimationFrame(updateCounter);
-        // Unobserve after starting
         counterObserver.unobserve(el);
       }
     });
@@ -118,6 +113,47 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   skillLevels.forEach(el => counterObserver.observe(el));
+
+  // ============================================
+  // ANIMATED STATISTICS COUNTERS
+  // ============================================
+
+  const statNumbers = document.querySelectorAll('.stat-number');
+
+  const statObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseInt(el.getAttribute('data-count'), 10);
+        if (isNaN(target)) return;
+
+        let current = 0;
+        const duration = 2000;
+        const startTime = performance.now();
+
+        function updateStat(timestamp) {
+          const elapsed = timestamp - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          current = Math.round(eased * target);
+          el.textContent = current.toLocaleString();
+
+          if (progress < 1) {
+            requestAnimationFrame(updateStat);
+          } else {
+            el.textContent = target.toLocaleString();
+          }
+        }
+
+        requestAnimationFrame(updateStat);
+        statObserver.unobserve(el);
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+
+  statNumbers.forEach(el => statObserver.observe(el));
 
   // ============================================
   // BACK TO TOP BUTTON
@@ -143,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ============================================
-  // SMOOTH SCROLL FOR NAV LINKS (progressive enhancement)
+  // SMOOTH SCROLL FOR NAV LINKS
   // ============================================
 
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
