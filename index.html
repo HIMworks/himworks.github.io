@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HIMworks — An independent software studio crafting modern, lightweight educational software, AI tools, and productivity apps.">
+  <meta name="keywords" content="HIMworks, software studio, indie developer, educational software, AI tools, productivity apps, web development">
+  <meta name="author" content="HIMworks">
+  <meta name="theme-color" content="#0a0a0f">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="HIMworks | Independent Software Studio">
+  <meta property="og:description" content="Building useful software, one project at a time. Educational tools, AI apps, and productivity software.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://himworks.github.io/">
+  <meta property="og:image" content="https://himworks.github.io/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HIMworks | Independent Software Studio">
+  <meta name="twitter:description" content="Building useful software, one project at a time.">
+
+  <title>HIMworks | Independent Software Studio</title>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts: Inter for body, Space Grotesk for display -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" aria-label="HIMworks Home">
+        <span class="logo-bracket">[</span>HIM<span class="logo-accent">works</span><span class="logo-bracket">]</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+        <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#roadmap" class="nav-link" role="menuitem">Roadmap</a></li>
+        <li role="none"><a href="#why-choose" class="nav-link" role="menuitem">Why Us</a></li>
+        <li role="none"><a href="#contact" class="nav-link nav-link--cta" role="menuitem">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main id="main-content">
+
+    <!-- ==================== HERO ==================== -->
+    <header class="hero" id="home">
+      <!-- Animated background orbs -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb--purple"></div>
+        <div class="orb orb--blue"></div>
+        <div class="orb orb--gold"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-logo reveal">
+          <span class="hero-logo__bracket">[</span>
+          <span class="hero-logo__text">HIM</span>
+          <span class="hero-logo__accent">works</span>
+          <span class="hero-logo__bracket">]</span>
+        </div>
+
+        <h1 class="hero-title reveal" data-delay="100">
+          Building useful software,<br>
+          <span class="text-gradient">one project at a time.</span>
+        </h1>
+
+        <p class="hero-subtitle reveal" data-delay="200">
+          Independent developer creating educational software, AI tools, productivity apps and web experiences.
+        </p>
+
+        <div class="hero-buttons reveal" data-delay="300">
+          <a href="#projects" class="btn btn--primary">
+            <span>View Projects</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--secondary">
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span class="scroll-text">Scroll</span>
+      </div>
+    </header>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">About</span>
+          <h2 id="about-heading" class="section-title">About <span class="text-gradient">HIMworks</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-card reveal" data-delay="100">
+            <div class="about-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Modern & Lightweight</h3>
+            <p>We build software that feels fast, looks beautiful, and stays out of your way. Every pixel and every line of code is intentional.</p>
+          </div>
+
+          <div class="about-card glass-card reveal" data-delay="200">
+            <div class="about-icon about-icon--blue" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <h3>Craftsmanship</h3>
+            <p>We believe in the art of software development. Clean architecture, thoughtful UX, and code that stands the test of time.</p>
+          </div>
+
+          <div class="about-card glass-card reveal" data-delay="300">
+            <div class="about-icon about-icon--gold" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            </div>
+            <h3>Continuous Improvement</h3>
+            <p>Software is never finished. We iterate, refine, and improve based on real user feedback and evolving best practices.</p>
+          </div>
+
+          <div class="about-card glass-card reveal" data-delay="400">
+            <div class="about-icon about-icon--purple" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            </div>
+            <h3>Clean Design</h3>
+            <p>Clarity over clutter. We design interfaces that are intuitive, accessible, and a pleasure to use every single day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECTS ==================== -->
+    <section class="section projects" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Portfolio</span>
+          <h2 id="projects-heading" class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+          <p class="section-subtitle">Tools and experiences built with care</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- TriBite - Main Product -->
+          <article class="project-card project-card--featured glass-card reveal" data-delay="100">
+            <div class="project-badge">Main Product</div>
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <h3 class="project-title">TriBite</h3>
+            </div>
+            <p class="project-desc">An all-in-one educational platform designed to make learning interactive, engaging, and accessible.</p>
+            
+            <ul class="project-features" aria-label="TriBite features">
+              <li><span class="feature-dot" aria-hidden="true"></span>Calculate It</li>
+              <li><span class="feature-dot feature-dot--blue" aria-hidden="true"></span>Math Lab</li>
+              <li><span class="feature-dot feature-dot--gold" aria-hidden="true"></span>Science Lab</li>
+              <li><span class="feature-dot feature-dot--purple" aria-hidden="true"></span>Notes</li>
+              <li><span class="feature-dot" aria-hidden="true"></span>Play</li>
+              <li><span class="feature-dot feature-dot--blue" aria-hidden="true"></span>biteAI</li>
+            </ul>
+
+            <a href="https://himworks.github.io/TriBite/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--full">
+              <span>Launch TriBite</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+            </a>
+          </article>
+
+          <!-- Future AI -->
+          <article class="project-card glass-card reveal" data-delay="200">
+            <div class="project-header">
+              <div class="project-icon project-icon--blue" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+              </div>
+              <h3 class="project-title">Future AI</h3>
+            </div>
+            <p class="project-desc">Upcoming AI-powered tools to automate workflows, enhance creativity, and solve real-world problems.</p>
+            <div class="project-status">
+              <span class="status-pill status-pill--soon">Coming Soon</span>
+            </div>
+          </article>
+
+          <!-- Future Games -->
+          <article class="project-card glass-card reveal" data-delay="300">
+            <div class="project-header">
+              <div class="project-icon project-icon--gold" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 11h4M8 9v4"/><circle cx="16" cy="12" r="1"/><path d="M2 12a10 10 0 1020 0 10 10 0 00-20 0z"/></svg>
+              </div>
+              <h3 class="project-title">Future Games</h3>
+            </div>
+            <p class="project-desc">Educational and casual games built with modern web technologies for immersive learning experiences.</p>
+            <div class="project-status">
+              <span class="status-pill status-pill--soon">Coming Soon</span>
+            </div>
+          </article>
+
+          <!-- Future Educational Tools -->
+          <article class="project-card glass-card reveal" data-delay="400">
+            <div class="project-header">
+              <div class="project-icon project-icon--purple" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+              </div>
+              <h3 class="project-title">Future Educational Tools</h3>
+            </div>
+            <p class="project-desc">Next-generation learning utilities focused on STEM education, interactive simulations, and adaptive quizzes.</p>
+            <div class="project-status">
+              <span class="status-pill status-pill--soon">Coming Soon</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="section skills" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Expertise</span>
+          <h2 id="skills-heading" class="section-title">Skills & <span class="text-gradient">Technologies</span></h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-item glass-card reveal" data-delay="50">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <span class="skill-name">HTML</span>
+            <span class="skill-level" data-count="95">0</span><span class="skill-percent">%</span>
+          </div>
+
+          <div class="skill-item glass-card reveal" data-delay="100">
+            <div class="skill-icon skill-icon--blue" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+            </div>
+            <span class="skill-name">CSS</span>
+            <span class="skill-level" data-count="92">0</span><span class="skill-percent">%</span>
+          </div>
+
+          <div class="skill-item glass-card reveal" data-delay="150">
+            <div class="skill-icon skill-icon--gold" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 20H4a2 2 0 01-2-2V5a2 2 0 012-2h16a2 2 0 012 2v10"/><path d="M16 18l2 2 4-4"/></svg>
+            </div>
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-level" data-count="90">0</span><span class="skill-percent">%</span>
+          </div>
+
+          <div class="skill-item glass-card reveal" data-delay="200">
+            <div class="skill-icon skill-icon--purple" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+            </div>
+            <span class="skill-name">Responsive Design</span>
+            <span class="skill-level" data-count="94">0</span><span class="skill-percent">%</span>
+          </div>
+
+          <div class="skill-item glass-card reveal" data-delay="250">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <span class="skill-name">Progressive Web Apps</span>
+            <span class="skill-level" data-count="85">0</span><span class="skill-percent">%</span>
+          </div>
+
+          <div class="skill-item glass-card reveal" data-delay="300">
+            <div class="skill-icon skill-icon--blue" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><path d="M11 11l-4 4"/></svg>
+            </div>
+            <span class="skill-name">UI Design</span>
+            <span class="skill-level" data-count="88">0</span><span class="skill-percent">%</span>
+          </div>
+
+          <div class="skill-item glass-card reveal" data-delay="350">
+            <div class="skill-icon skill-icon--gold" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            </div>
+            <span class="skill-name">SEO</span>
+            <span class="skill-level" data-count="87">0</span><span class="skill-percent">%</span>
+          </div>
+
+          <div class="skill-item glass-card reveal" data-delay="400">
+            <div class="skill-icon skill-icon--purple" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            </div>
+            <span class="skill-name">GitHub Pages</span>
+            <span class="skill-level" data-count="93">0</span><span class="skill-percent">%</span>
+          </div>
+
+          <div class="skill-item glass-card reveal" data-delay="450">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            </div>
+            <span class="skill-name">AI Integration</span>
+            <span class="skill-level" data-count="80">0</span><span class="skill-percent">%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ROADMAP ==================== -->
+    <section class="section roadmap" id="roadmap" aria-labelledby="roadmap-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Journey</span>
+          <h2 id="roadmap-heading" class="section-title">Current <span class="text-gradient">Roadmap</span></h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item timeline-item--completed reveal" data-delay="100">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-status">Completed</span>
+              <h3>TriBite v1.0 Launch</h3>
+              <p>Initial release with Calculate It, Math Lab, Science Lab, Notes, and Play modules.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-item--active reveal" data-delay="200">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-status timeline-status--active">Working On</span>
+              <h3>biteAI Integration</h3>
+              <p>Building intelligent AI assistants into TriBite to provide personalized learning paths and instant help.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-delay="300">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-status timeline-status--soon">Coming Soon</span>
+              <h3>Future AI Tools Suite</h3>
+              <p>A collection of standalone AI utilities for productivity, writing, and creative workflows.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-delay="400">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-status timeline-status--soon">Coming Soon</span>
+              <h3>Educational Games Platform</h3>
+              <p>Interactive browser-based games designed to teach STEM concepts through play.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE ==================== -->
+    <section class="section why-choose" id="why-choose" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Why Us</span>
+          <h2 id="why-heading" class="section-title">Why Choose <span class="text-gradient">HIMworks</span></h2>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card glass-card reveal" data-delay="50">
+            <div class="why-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+            </div>
+            <h3>Responsive Websites</h3>
+            <p>Flawless experiences across all devices, from mobile phones to ultra-wide monitors.</p>
+          </div>
+
+          <div class="why-card glass-card reveal" data-delay="100">
+            <div class="why-icon why-icon--blue" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+            </div>
+            <h3>Clean Code</h3>
+            <p>Maintainable, well-documented code following industry best practices and standards.</p>
+          </div>
+
+          <div class="why-card glass-card reveal" data-delay="150">
+            <div class="why-icon why-icon--gold" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+            </div>
+            <h3>Mobile-First Design</h3>
+            <p>Designed for thumbs first, then scaled up to desktop with enhanced interactions.</p>
+          </div>
+
+          <div class="why-card glass-card reveal" data-delay="200">
+            <div class="why-icon why-icon--purple" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3>Fast Performance</h3>
+            <p>Optimized assets, minimal dependencies, and lightning-fast load times.</p>
+          </div>
+
+          <div class="why-card glass-card reveal" data-delay="250">
+            <div class="why-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3>Continuous Support</h3>
+            <p>Ongoing updates, bug fixes, and improvements long after the initial release.</p>
+          </div>
+
+          <div class="why-card glass-card reveal" data-delay="300">
+            <div class="why-icon why-icon--blue" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>Attention to Detail</h3>
+            <p>Every animation, transition, and micro-interaction is crafted with purpose.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Get in Touch</span>
+          <h2 id="contact-heading" class="section-title">Let's Build <span class="text-gradient">Something Great</span></h2>
+        </div>
+
+        <div class="contact-grid">
+          <a href="mailto:KartikHimworks2@gmail.com" class="contact-card glass-card reveal" data-delay="100" aria-label="Email HIMworks">
+            <div class="contact-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            </div>
+            <h3>Email</h3>
+            <p class="contact-detail">KartikHimworks2@gmail.com</p>
+            <span class="contact-action">Send a message &rarr;</span>
+          </a>
+
+          <a href="https://github.com/HIMworks" target="_blank" rel="noopener noreferrer" class="contact-card glass-card reveal" data-delay="200" aria-label="HIMworks GitHub">
+            <div class="contact-icon contact-icon--blue" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            </div>
+            <h3>GitHub</h3>
+            <p class="contact-detail">github.com/HIMworks</p>
+            <span class="contact-action">View repositories &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">[HIM<span class="text-gradient">works</span>]</span>
+          <p class="footer-tagline">"Built with passion, code and creativity."</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 HIMworks. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
